@@ -1,0 +1,13 @@
+add node0, node1 : JavascriptNode
+add sync : RemoteWSGroup
+
+set sync.host = "ws.braindead.fr"
+set sync.path = "myId"
+
+attach node0, node1 sync
+
+network node0.ip.lo 127.0.0.1
+network node1.ip.lo 127.0.0.1
+
+set node0.logLevel = "DEBUG"
+set node1.logLevel = "DEBUG"
