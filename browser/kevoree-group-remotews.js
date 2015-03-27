@@ -7385,7 +7385,7 @@ var AdaptationPrimitive = Class({
 });
 
 module.exports = AdaptationPrimitive;
-},{"pseudoclass":112}],41:[function(require,module,exports){
+},{"pseudoclass":109}],41:[function(require,module,exports){
 var Class           = require('pseudoclass'),
     kevoree         = require('kevoree-library').org.kevoree,
     EventEmitter    = require('events').EventEmitter;
@@ -7628,7 +7628,7 @@ var Dictionary = Class({
 });
 
 module.exports = Dictionary;
-},{"events":6,"kevoree-library":109,"pseudoclass":112}],42:[function(require,module,exports){
+},{"events":6,"kevoree-library":110,"pseudoclass":109}],42:[function(require,module,exports){
 var Class       = require('pseudoclass'),
     Dictionary  = require('./Dictionary'),
     KevScript   = require('kevoree-kevscript');
@@ -7883,7 +7883,7 @@ var KevoreeEntity = Class({
 
 KevoreeEntity.DIC = 'dic_';
 module.exports = KevoreeEntity;
-},{"./Dictionary":41,"kevoree-kevscript":54,"pseudoclass":112}],43:[function(require,module,exports){
+},{"./Dictionary":41,"kevoree-kevscript":54,"pseudoclass":109}],43:[function(require,module,exports){
 var Class         = require('pseudoclass'),
     KevoreeLogger = require('kevoree-commons').KevoreeLogger,
     EventEmitter  = require('events').EventEmitter;
@@ -7968,7 +7968,7 @@ var KevoreeUI = Class({
 });
 
 module.exports = KevoreeUI;
-},{"events":6,"kevoree-commons":45,"pseudoclass":112}],44:[function(require,module,exports){
+},{"events":6,"kevoree-commons":45,"pseudoclass":109}],44:[function(require,module,exports){
 var Class = require('pseudoclass');
 
 /**
@@ -8029,7 +8029,7 @@ var Port = Class({
 });
 
 module.exports = Port;
-},{"pseudoclass":112}],45:[function(require,module,exports){
+},{"pseudoclass":109}],45:[function(require,module,exports){
 module.exports.Resolver      = require('./lib/Resolver');
 module.exports.Bootstrapper  = require('./lib/Bootstrapper');
 module.exports.KevoreeLogger = require('./lib/KevoreeLogger');
@@ -8131,7 +8131,7 @@ var Bootstrapper = Class({
 });
 
 module.exports = Bootstrapper;
-},{"pseudoclass":112}],47:[function(require,module,exports){
+},{"pseudoclass":109}],47:[function(require,module,exports){
 var Class = require('pseudoclass');
 
 var FileSystem = Class({
@@ -8167,7 +8167,7 @@ var getBrowserFileSystem = function getBrowserFileSystem(fsapi, size, callback) 
 };
 
 module.exports = FileSystem;
-},{"pseudoclass":112}],48:[function(require,module,exports){
+},{"pseudoclass":109}],48:[function(require,module,exports){
 var Class  = require('pseudoclass'),
     chalk  = require('chalk');
 
@@ -8281,7 +8281,7 @@ KevoreeLogger.ERROR = LEVELS.indexOf('error');
 KevoreeLogger.QUIET = LEVELS.indexOf('quiet');
 
 module.exports = KevoreeLogger;
-},{"chalk":50,"pseudoclass":112}],49:[function(require,module,exports){
+},{"chalk":50,"pseudoclass":109}],49:[function(require,module,exports){
 var Class = require('pseudoclass'),
     KevoreeLogger = require('./KevoreeLogger');
 
@@ -8314,7 +8314,7 @@ var Resolver = Class({
 });
 
 module.exports = Resolver;
-},{"./KevoreeLogger":48,"pseudoclass":112}],50:[function(require,module,exports){
+},{"./KevoreeLogger":48,"pseudoclass":109}],50:[function(require,module,exports){
 'use strict';
 var ansi = require('ansi-styles');
 var stripAnsi = require('strip-ansi');
@@ -8502,7 +8502,7 @@ var KevScript = Class({
 });
 
 module.exports = KevScript;
-},{"./interpreter":65,"./model-interpreter":67,"./parser":68,"pseudoclass":112}],55:[function(require,module,exports){
+},{"./interpreter":65,"./model-interpreter":67,"./parser":68,"pseudoclass":109}],55:[function(require,module,exports){
 /**
  * Created by leiko on 10/04/14.
  */
@@ -9088,7 +9088,7 @@ var interpreter = function (ast, ctxModel, callback) {
 };
 
 module.exports = interpreter;
-},{"./statements/add":69,"./statements/addBinding":70,"./statements/addRepo":71,"./statements/anything":72,"./statements/attach":73,"./statements/delBinding":74,"./statements/detach":75,"./statements/doubleQuoteLine":76,"./statements/escaped":77,"./statements/include":78,"./statements/instancePath":79,"./statements/move":80,"./statements/nameList":81,"./statements/namespace":82,"./statements/network":83,"./statements/newLine":84,"./statements/pause":85,"./statements/realString":86,"./statements/realStringNoNewLine":87,"./statements/remove":88,"./statements/repoString":89,"./statements/set":90,"./statements/singleQuoteLine":91,"./statements/start":92,"./statements/stop":93,"./statements/string":94,"./statements/string2":95,"./statements/string3":96,"./statements/typeDef":97,"./statements/typeFQN":98,"./statements/version":99,"./statements/wildcard":100,"async":101,"kevoree-library":109,"path":13}],66:[function(require,module,exports){
+},{"./statements/add":69,"./statements/addBinding":70,"./statements/addRepo":71,"./statements/anything":72,"./statements/attach":73,"./statements/delBinding":74,"./statements/detach":75,"./statements/doubleQuoteLine":76,"./statements/escaped":77,"./statements/include":78,"./statements/instancePath":79,"./statements/move":80,"./statements/nameList":81,"./statements/namespace":82,"./statements/network":83,"./statements/newLine":84,"./statements/pause":85,"./statements/realString":86,"./statements/realStringNoNewLine":87,"./statements/remove":88,"./statements/repoString":89,"./statements/set":90,"./statements/singleQuoteLine":91,"./statements/start":92,"./statements/stop":93,"./statements/string":94,"./statements/string2":95,"./statements/string3":96,"./statements/typeDef":97,"./statements/typeFQN":98,"./statements/version":99,"./statements/wildcard":100,"async":101,"kevoree-library":110,"path":13}],66:[function(require,module,exports){
 function findChanNodeGroupByName(model, name) {
   function findByName(elem) {
     var elems = (model[elem]) ? model[elem].iterator() : null;
@@ -9728,7 +9728,7 @@ module.exports = function (model, statements, stmt, opts, done) {
         }
     });
 };
-},{"../getFQN":63,"kevoree-kotlin":102,"kevoree-library":109}],70:[function(require,module,exports){
+},{"../getFQN":63,"kevoree-kotlin":102,"kevoree-library":110}],70:[function(require,module,exports){
 var kevoree = require('kevoree-library').org.kevoree;
 var factory = new kevoree.factory.DefaultKevoreeFactory();
 
@@ -9898,7 +9898,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
     cb();
 };
-},{"kevoree-library":109}],71:[function(require,module,exports){
+},{"kevoree-library":110}],71:[function(require,module,exports){
 var kevoree = require('kevoree-library').org.kevoree;
 var factory = new kevoree.factory.DefaultKevoreeFactory();
 
@@ -9912,7 +9912,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
     cb();
 };
-},{"kevoree-library":109}],72:[function(require,module,exports){
+},{"kevoree-library":110}],72:[function(require,module,exports){
 module.exports = function (model, statements, stmt) {
   return stmt.children.join('');
 }
@@ -10216,7 +10216,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 //        return cb(new Error('Error: include '+type+':'+mergeDef+' (Unable to handle "'+type+'" include type. Did you add a resolver for that?)'));
 //    }
 };
-},{"kevoree-library":109,"path":13}],79:[function(require,module,exports){
+},{"kevoree-library":110,"path":13}],79:[function(require,module,exports){
 module.exports = function (model, statements, stmt, opts) {
     var instancePath = [];
     for (var i in stmt.children) {
@@ -10395,7 +10395,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
   cb();
 }
-},{"kevoree-kotlin":102,"kevoree-library":109}],81:[function(require,module,exports){
+},{"kevoree-kotlin":102,"kevoree-library":110}],81:[function(require,module,exports){
 module.exports = function (model, statements, stmt, opts) {
     var ret = [];
     for (var i in stmt.children) {
@@ -10484,7 +10484,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
     cb();
 };
-},{"kevoree-library":109}],84:[function(require,module,exports){
+},{"kevoree-library":110}],84:[function(require,module,exports){
 module.exports = function () {
     return '\n';
 };
@@ -10722,7 +10722,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
     cb();
 };
-},{"../model-helper":66,"kevoree-kotlin":102,"kevoree-library":109}],89:[function(require,module,exports){
+},{"../model-helper":66,"kevoree-kotlin":102,"kevoree-library":110}],89:[function(require,module,exports){
 module.exports = function (model, statements, stmt) {
   return stmt.children.join('');
 };
@@ -10886,7 +10886,7 @@ module.exports = function (model, statements, stmt, opts, cb) {
 
     cb();
 };
-},{"../model-helper":66,"kevoree-library":109}],91:[function(require,module,exports){
+},{"../model-helper":66,"kevoree-library":110}],91:[function(require,module,exports){
 arguments[4][76][0].apply(exports,arguments)
 },{"dup":76}],92:[function(require,module,exports){
 var resolver = require('../instance-resolver');
@@ -11067,7 +11067,7 @@ function getBestVersion(tdefs) {
 
     return getGreater((onlyReleases.length === 0) ? tdefs : onlyReleases);
 }
-},{"../getFQN":63,"kevoree-library":109,"kevoree-registry-client":104,"semver":107}],98:[function(require,module,exports){
+},{"../getFQN":63,"kevoree-library":110,"kevoree-registry-client":104,"semver":107}],98:[function(require,module,exports){
 // Created by leiko on 27/08/14 15:15
 module.exports = function (model, statements, stmt, opts, cb) {
     var typeFqn = [];
@@ -13428,6 +13428,9 @@ if (typeof module === 'object' && module.exports === exports)
 // Not necessarily the package version of this code.
 exports.SEMVER_SPEC_VERSION = '2.0.0';
 
+var MAX_LENGTH = 256;
+var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || 9007199254740991;
+
 // The actual regexps go on exports.re
 var re = exports.re = [];
 var src = exports.src = [];
@@ -13641,8 +13644,18 @@ for (var i = 0; i < R; i++) {
 
 exports.parse = parse;
 function parse(version, loose) {
+  if (version.length > MAX_LENGTH)
+    return null;
+
   var r = loose ? re[LOOSE] : re[FULL];
-  return (r.test(version)) ? new SemVer(version, loose) : null;
+  if (!r.test(version))
+    return null;
+
+  try {
+    return new SemVer(version, loose);
+  } catch (er) {
+    return null;
+  }
 }
 
 exports.valid = valid;
@@ -13670,6 +13683,9 @@ function SemVer(version, loose) {
     throw new TypeError('Invalid Version: ' + version);
   }
 
+  if (version.length > MAX_LENGTH)
+    throw new TypeError('version is longer than ' + MAX_LENGTH + ' characters')
+
   if (!(this instanceof SemVer))
     return new SemVer(version, loose);
 
@@ -13686,6 +13702,15 @@ function SemVer(version, loose) {
   this.major = +m[1];
   this.minor = +m[2];
   this.patch = +m[3];
+
+  if (this.major > MAX_SAFE_INTEGER || this.major < 0)
+    throw new TypeError('Invalid major version')
+
+  if (this.minor > MAX_SAFE_INTEGER || this.minor < 0)
+    throw new TypeError('Invalid minor version')
+
+  if (this.patch > MAX_SAFE_INTEGER || this.patch < 0)
+    throw new TypeError('Invalid patch version')
 
   // numberify any prerelease numeric ids
   if (!m[4])
@@ -14852,6 +14877,336 @@ if (typeof module !== "undefined" && module !== null) {
   module.exports.WaxeyeParser = waxeye.WaxeyeParser;
 }
 },{}],109:[function(require,module,exports){
+/*
+	Class - JavaScript inheritance
+
+	Construction:
+		Setup and construction should happen in the construct() method.
+		The construct() method is automatically chained, so all construct() methods defined by superclass methods will be called first.
+
+	Initialization:
+		Initialziation that needs to happen after all construct() methods have been called should be done in the init() method.
+		The init() method is not automatically chained, so you must call this._super() if you intend to call the superclass' init method.
+		init() is not passed any arguments
+
+	Destruction:
+		Teardown and destruction should happen in the destruct() method. The destruct() method is also chained.
+
+	Mixins:
+		An array of mixins can be provided with the mixins[] property. An object or the prototype of a class should be provided, not a constructor.
+		Mixins can be added at any time by calling this.mixin(properties)
+
+	Usage:
+		var MyClass = Class(properties);
+		var MyClass = new Class(properties);
+		var MyClass = Class.extend(properties);
+
+	Credits:
+		Inspired by Simple JavaScript Inheritance by John Resig http://ejohn.org/
+
+	Usage differences:
+		construct() is used to setup instances and is chained so superclass construct() methods run automatically
+		destruct() is used to tear down instances. destruct() is also chained
+		init(), if defined, is called after construction is complete and is not chained
+		toString() can be defined as a string or a function
+		mixin() is provided to mix properties into an instance
+		properties.mixins as an array results in each of the provided objects being mixed in (last object wins)
+		this._super() is supported in mixins
+		properties, if defined, should be a hash of property descriptors as accepted by Object.defineProperties
+*/
+(function(global) {
+	// Extend the current context by the passed objects
+	function extendThis() {
+		var i, ni, objects, object, prop;
+		objects = arguments;
+		for (i = 0, ni = objects.length; i < ni; i++) {
+			object = objects[i];
+			for (prop in object) {
+				this[prop] = object[prop];
+			}
+		}
+
+		return this;
+	}
+
+	// Return a function that calls the specified method, passing arguments
+	function makeApplier(method) {
+		return function() {
+			return this[method].apply(this, arguments);
+		};
+	}
+
+	// Merge and define properties
+	function defineAndInheritProperties(Component, properties) {
+		var constructor,
+			descriptor,
+			property,
+			propertyDescriptors,
+			propertyDescriptorHash,
+			propertyDescriptorQueue;
+
+		// Set properties
+		Component.properties = properties;
+
+		// Traverse the chain of constructors and gather all property descriptors
+		// Build a queue of property descriptors for combination
+		propertyDescriptorHash = {};
+		constructor = Component;
+		do {
+			if (constructor.properties) {
+				for (property in constructor.properties) {
+					propertyDescriptorQueue = propertyDescriptorHash[property] || (propertyDescriptorHash[property] = []);
+					propertyDescriptorQueue.unshift(constructor.properties[property]);
+				}
+			}
+			constructor = constructor.superConstructor;
+		}
+		while (constructor);
+
+		// Combine property descriptors, allowing overriding of individual properties
+		propertyDescriptors = {};
+		for (property in propertyDescriptorHash) {
+			descriptor = propertyDescriptors[property] = extendThis.apply({}, propertyDescriptorHash[property]);
+
+			// Allow setters to be strings
+			// An additional wrapping function is used to allow monkey-patching
+			// apply is used to handle cases where the setter is called directly
+			if (typeof descriptor.set === 'string') {
+				descriptor.set = makeApplier(descriptor.set);
+			}
+			if (typeof descriptor.get === 'string') {
+				descriptor.get = makeApplier(descriptor.get);
+			}
+		}
+
+		// Store option descriptors on the constructor
+		Component.properties = propertyDescriptors;
+	}
+
+	// Used for default initialization methods
+	var noop = function() {};
+
+	// Given a function, the superTest RE will match if _super is used in the function
+	// The function will be serialized, then the serialized string will be searched for _super
+	// If the environment isn't capable of function serialization, make it so superTest.test always returns true
+	var superTest = /xyz/.test(function(){return 'xyz';}) ? /\._super\b/ : { test: function() { return true; } };
+
+	// Bind an overriding method such that it gets the overridden method as its first argument
+	var superifyDynamic = function(name, func, superPrototype) {
+		return function PseudoClass_setStaticSuper() {
+			// Store the old super
+			var previousSuper = this._super;
+
+			// Use the method from the superclass' prototype
+			// This strategy allows monkey patching (modification of superclass prototypes)
+			this._super = superPrototype[name];
+
+			// Call the actual function
+			var ret = func.apply(this, arguments);
+
+			// Restore the previous value of super
+			// This is required so that calls to methods that use _super within methods that use _super work
+			this._super = previousSuper;
+
+			return ret;
+		};
+	};
+
+	var superifyStatic = function(name, func, object) {
+		// Store a reference to the overridden function
+		var _super = object[name];
+
+		return function PseudoClass_setDynamicSuper() {
+			// Use the method stored at declaration time
+			this._super = _super;
+
+			// Call the actual function
+			return func.apply(this, arguments);
+		};
+	};
+
+	// Mix the provided properties into the current context with the ability to call overridden methods with _super()
+	var mixin = function(properties, superPrototype) {
+		// Use this instance's prototype if no prototype provided
+		superPrototype = superPrototype || this.constructor && this.constructor.prototype;
+		
+		// Copy the properties onto the new prototype
+		for (var name in properties) {
+			var value = properties[name];
+
+			// Never mix construct or destruct
+			if (name === 'construct' || name === 'destruct')
+				continue;
+
+			// Check if the property if a method that makes use of _super:
+			// 1. The value should be a function
+			// 2. The super prototype should have a function by the same name
+			// 3. The function should use this._super somewhere
+			var usesSuper = superPrototype && typeof value === 'function' && typeof superPrototype[name] === 'function' && superTest.test(value);
+
+			if (usesSuper) {
+				// Wrap the function such that this._super will be available
+				if (this.hasOwnProperty(name)) {
+					// Properties that exist directly on the object should be superified statically
+					this[name] = superifyStatic(name, value, this);
+				}
+				else {
+					// Properties that are part of the superPrototype should be superified dynamically
+					this[name] = superifyDynamic(name, value, superPrototype);
+				}
+			}
+			else {
+				// Directly assign the property
+				this[name] = value;
+			}
+		}
+	};
+
+	// The base Class implementation acts as extend alias, with the exception that it can take properties.extend as the Class to extend
+	var Class = function(properties) {
+		// If a class-like object is passed as properties.extend, just call extend on it
+		if (properties && properties.extend)
+			return properties.extend.extend(properties);
+
+		// Otherwise, just create a new class with the passed properties
+		return Class.extend(properties);
+	};
+	
+	// Add the mixin method to all classes created with Class
+	Class.prototype.mixin = mixin;
+	
+	// Creates a new Class that inherits from this class
+	// Give the function a name so it can refer to itself without arguments.callee
+	Class.extend = function extend(properties) {
+		// The constructor handles creating an instance of the class, applying mixins, and calling construct() and init() methods
+		function Class() {
+			// Optimization: Requiring the new keyword and avoiding usage of Object.create() increases performance by 5x
+			if (this instanceof Class === false) {
+				throw new Error('Cannot create instance without new operator');
+			}
+
+			// Set properties
+			var propertyDescriptors = Class.properties;
+			if (propertyDescriptors) {
+				Object.defineProperties(this, propertyDescriptors);
+			}
+
+			// Optimization: Avoiding conditionals in constructor increases performance of instantiation by 2x
+			this.construct.apply(this, arguments);
+
+			this.init();
+		}
+
+		var superConstructor = this;
+		var superPrototype = this.prototype;
+
+		// Store the superConstructor
+		// It will be accessible on an instance as follows:
+		//	instance.constructor.superConstructor
+		Class.superConstructor = superConstructor;
+
+		// Add extend() as a static method on the constructor
+		Class.extend = extend;
+
+		// Create an object with the prototype of the superclass
+		// Store the extended class' prototype as the prototype of the constructor
+		var prototype = Class.prototype = Object.create(superPrototype);
+
+		// Assign prototype.constructor to the constructor itself
+		// This allows instances to refer to this.constructor.prototype
+		// This also allows creation of new instances using instance.constructor()
+		prototype.constructor = Class;
+
+		// Store the superPrototype
+		// It will be accessible on an instance as follows:
+		//	instance.superPrototype
+		//	instance.constructor.prototype.superPrototype
+		prototype.superPrototype = superPrototype;
+
+		if (properties) {
+			// Set property descriptors aside
+			// We'll first inherit methods, then we'll apply these
+			var propertyDescriptors = properties.properties;
+			delete properties.properties;
+
+			// Mix the new properties into the class prototype
+			// This does not copy construct and destruct
+			mixin.call(prototype, properties, superPrototype);
+
+			// Mix in all the mixins
+			// This also does not copy construct and destruct
+			if (Array.isArray(properties.mixins)) {
+				for (var i = 0, ni = properties.mixins.length; i < ni; i++) {
+					// Mixins should be _super enabled, with the methods defined in the prototype as the superclass methods
+					mixin.call(prototype, properties.mixins[i], prototype);
+				}
+			}
+
+			// Define properties from this class and its parent classes
+			defineAndInheritProperties(Class, propertyDescriptors);
+
+			// Chain the construct() method (supermost executes first) if necessary
+			if (properties.construct) {
+				var construct = properties.construct;
+				if (superPrototype.construct) {
+					prototype.construct = function() {
+						superPrototype.construct.apply(this, arguments);
+						construct.apply(this, arguments);
+					};
+				}
+				else {
+					prototype.construct = construct;
+				}
+			}
+			
+			// Chain the destruct() method in reverse order (supermost executes last) if necessary
+			if (properties.destruct) {
+				var destruct = properties.destruct;
+				if (superPrototype.destruct) {
+					prototype.destruct = function() {
+						destruct.apply(this, arguments);
+						superPrototype.destruct.apply(this, arguments);
+					};
+				}
+				else {
+					prototype.destruct = destruct;
+				}
+			}
+
+			// Allow definition of toString as a string (turn it into a function)
+			if (typeof properties.toString === 'string') {
+				var className = properties.toString;
+				prototype.toString = function() { return className; };
+			}
+		}
+
+		// Define construct and init as noops if undefined
+		// This serves to avoid conditionals inside of the constructor
+		if (typeof prototype.construct !== 'function')
+			prototype.construct = noop;
+		if (typeof prototype.init !== 'function')
+			prototype.init = noop;
+
+		return Class;
+	};
+	
+	if (typeof module !== 'undefined' && module.exports) {
+		// Node.js Support
+		module.exports = Class;
+	}
+	else if (typeof global.define === 'function') {
+		(function(define) {
+			// AMD Support
+			define(function() { return Class; });
+		}(global.define));
+	}
+	else {
+		// Browser support
+		global.Class = global.PseudoClass = Class;
+	}
+}(this));
+
+},{}],110:[function(require,module,exports){
 (function (global){
 if (!global.Kotlin) {
     global.Kotlin = require('kevoree-kotlin');
@@ -55481,352 +55836,18 @@ if (!Kotlin.modules['kevoree']) {
   Kotlin.defineModule('kevoree', _);
 }
 
-module.exports = Kotlin.modules['kevoree'];
-
+module.exports = Kotlin.modules['kevoree'].org.kevoree;
+module.exports.org = {
+  kevoree: Kotlin.modules['kevoree'].org.kevoree
+}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"kevoree-kotlin":110}],110:[function(require,module,exports){
+},{"kevoree-kotlin":111}],111:[function(require,module,exports){
 arguments[4][102][0].apply(exports,arguments)
-},{"./lib/kotlin":111,"dup":102}],111:[function(require,module,exports){
+},{"./lib/kotlin":112,"dup":102}],112:[function(require,module,exports){
 arguments[4][103][0].apply(exports,arguments)
-},{"dup":103}],112:[function(require,module,exports){
-/*
-	Class - JavaScript inheritance
-
-	Construction:
-		Setup and construction should happen in the construct() method.
-		The construct() method is automatically chained, so all construct() methods defined by superclass methods will be called first.
-
-	Initialization:
-		Initialziation that needs to happen after all construct() methods have been called should be done in the init() method.
-		The init() method is not automatically chained, so you must call this._super() if you intend to call the superclass' init method.
-		init() is not passed any arguments
-
-	Destruction:
-		Teardown and destruction should happen in the destruct() method. The destruct() method is also chained.
-
-	Mixins:
-		An array of mixins can be provided with the mixins[] property. An object or the prototype of a class should be provided, not a constructor.
-		Mixins can be added at any time by calling this.mixin(properties)
-
-	Usage:
-		var MyClass = Class(properties);
-		var MyClass = new Class(properties);
-		var MyClass = Class.extend(properties);
-
-	Credits:
-		Inspired by Simple JavaScript Inheritance by John Resig http://ejohn.org/
-
-	Usage differences:
-		construct() is used to setup instances and is chained so superclass construct() methods run automatically
-		destruct() is used to tear down instances. destruct() is also chained
-		init(), if defined, is called after construction is complete and is not chained
-		toString() can be defined as a string or a function
-		mixin() is provided to mix properties into an instance
-		properties.mixins as an array results in each of the provided objects being mixed in (last object wins)
-		this._super() is supported in mixins
-		properties, if defined, should be a hash of property descriptors as accepted by Object.defineProperties
-*/
-(function(global) {
-	// Extend the current context by the passed objects
-	function extendThis() {
-		var i, ni, objects, object, prop;
-		objects = arguments;
-		for (i = 0, ni = objects.length; i < ni; i++) {
-			object = objects[i];
-			for (prop in object) {
-				this[prop] = object[prop];
-			}
-		}
-
-		return this;
-	}
-
-	// Return a function that calls the specified method, passing arguments
-	function makeApplier(method) {
-		return function() {
-			return this[method].apply(this, arguments);
-		};
-	}
-
-	// Merge and define properties
-	function defineAndInheritProperties(Component, properties) {
-		var constructor,
-			descriptor,
-			property,
-			propertyDescriptors,
-			propertyDescriptorHash,
-			propertyDescriptorQueue;
-
-		// Set properties
-		Component.properties = properties;
-
-		// Traverse the chain of constructors and gather all property descriptors
-		// Build a queue of property descriptors for combination
-		propertyDescriptorHash = {};
-		constructor = Component;
-		do {
-			if (constructor.properties) {
-				for (property in constructor.properties) {
-					propertyDescriptorQueue = propertyDescriptorHash[property] || (propertyDescriptorHash[property] = []);
-					propertyDescriptorQueue.unshift(constructor.properties[property]);
-				}
-			}
-			constructor = constructor.superConstructor;
-		}
-		while (constructor);
-
-		// Combine property descriptors, allowing overriding of individual properties
-		propertyDescriptors = {};
-		for (property in propertyDescriptorHash) {
-			descriptor = propertyDescriptors[property] = extendThis.apply({}, propertyDescriptorHash[property]);
-
-			// Allow setters to be strings
-			// An additional wrapping function is used to allow monkey-patching
-			// apply is used to handle cases where the setter is called directly
-			if (typeof descriptor.set === 'string') {
-				descriptor.set = makeApplier(descriptor.set);
-			}
-			if (typeof descriptor.get === 'string') {
-				descriptor.get = makeApplier(descriptor.get);
-			}
-		}
-
-		// Store option descriptors on the constructor
-		Component.properties = propertyDescriptors;
-	}
-
-	// Used for default initialization methods
-	var noop = function() {};
-
-	// Given a function, the superTest RE will match if _super is used in the function
-	// The function will be serialized, then the serialized string will be searched for _super
-	// If the environment isn't capable of function serialization, make it so superTest.test always returns true
-	var superTest = /xyz/.test(function(){return 'xyz';}) ? /\._super\b/ : { test: function() { return true; } };
-
-	// Bind an overriding method such that it gets the overridden method as its first argument
-	var superifyDynamic = function(name, func, superPrototype) {
-		return function PseudoClass_setStaticSuper() {
-			// Store the old super
-			var previousSuper = this._super;
-
-			// Use the method from the superclass' prototype
-			// This strategy allows monkey patching (modification of superclass prototypes)
-			this._super = superPrototype[name];
-
-			// Call the actual function
-			var ret = func.apply(this, arguments);
-
-			// Restore the previous value of super
-			// This is required so that calls to methods that use _super within methods that use _super work
-			this._super = previousSuper;
-
-			return ret;
-		};
-	};
-
-	var superifyStatic = function(name, func, object) {
-		// Store a reference to the overridden function
-		var _super = object[name];
-
-		return function PseudoClass_setDynamicSuper() {
-			// Use the method stored at declaration time
-			this._super = _super;
-
-			// Call the actual function
-			return func.apply(this, arguments);
-		};
-	};
-
-	// Mix the provided properties into the current context with the ability to call overridden methods with _super()
-	var mixin = function(properties, superPrototype) {
-		// Use this instance's prototype if no prototype provided
-		superPrototype = superPrototype || this.constructor && this.constructor.prototype;
-		
-		// Copy the properties onto the new prototype
-		for (var name in properties) {
-			var value = properties[name];
-
-			// Never mix construct or destruct
-			if (name === 'construct' || name === 'destruct')
-				continue;
-
-			// Check if the property if a method that makes use of _super:
-			// 1. The value should be a function
-			// 2. The super prototype should have a function by the same name
-			// 3. The function should use this._super somewhere
-			var usesSuper = superPrototype && typeof value === 'function' && typeof superPrototype[name] === 'function' && superTest.test(value);
-
-			if (usesSuper) {
-				// Wrap the function such that this._super will be available
-				if (this.hasOwnProperty(name)) {
-					// Properties that exist directly on the object should be superified statically
-					this[name] = superifyStatic(name, value, this);
-				}
-				else {
-					// Properties that are part of the superPrototype should be superified dynamically
-					this[name] = superifyDynamic(name, value, superPrototype);
-				}
-			}
-			else {
-				// Directly assign the property
-				this[name] = value;
-			}
-		}
-	};
-
-	// The base Class implementation acts as extend alias, with the exception that it can take properties.extend as the Class to extend
-	var Class = function(properties) {
-		// If a class-like object is passed as properties.extend, just call extend on it
-		if (properties && properties.extend)
-			return properties.extend.extend(properties);
-
-		// Otherwise, just create a new class with the passed properties
-		return Class.extend(properties);
-	};
-	
-	// Add the mixin method to all classes created with Class
-	Class.prototype.mixin = mixin;
-	
-	// Creates a new Class that inherits from this class
-	// Give the function a name so it can refer to itself without arguments.callee
-	Class.extend = function extend(properties) {
-		// The constructor handles creating an instance of the class, applying mixins, and calling construct() and init() methods
-		function Class() {
-			// Optimization: Requiring the new keyword and avoiding usage of Object.create() increases performance by 5x
-			if (this instanceof Class === false) {
-				throw new Error('Cannot create instance without new operator');
-			}
-
-			// Set properties
-			var propertyDescriptors = Class.properties;
-			if (propertyDescriptors) {
-				Object.defineProperties(this, propertyDescriptors);
-			}
-
-			// Optimization: Avoiding conditionals in constructor increases performance of instantiation by 2x
-			this.construct.apply(this, arguments);
-
-			this.init();
-		}
-
-		var superConstructor = this;
-		var superPrototype = this.prototype;
-
-		// Store the superConstructor
-		// It will be accessible on an instance as follows:
-		//	instance.constructor.superConstructor
-		Class.superConstructor = superConstructor;
-
-		// Add extend() as a static method on the constructor
-		Class.extend = extend;
-
-		// Create an object with the prototype of the superclass
-		// Store the extended class' prototype as the prototype of the constructor
-		var prototype = Class.prototype = Object.create(superPrototype);
-
-		// Assign prototype.constructor to the constructor itself
-		// This allows instances to refer to this.constructor.prototype
-		// This also allows creation of new instances using instance.constructor()
-		prototype.constructor = Class;
-
-		// Store the superPrototype
-		// It will be accessible on an instance as follows:
-		//	instance.superPrototype
-		//	instance.constructor.prototype.superPrototype
-		prototype.superPrototype = superPrototype;
-
-		if (properties) {
-			// Set property descriptors aside
-			// We'll first inherit methods, then we'll apply these
-			var propertyDescriptors = properties.properties;
-			delete properties.properties;
-
-			// Mix the new properties into the class prototype
-			// This does not copy construct and destruct
-			mixin.call(prototype, properties, superPrototype);
-
-			// Mix in all the mixins
-			// This also does not copy construct and destruct
-			if (Array.isArray(properties.mixins)) {
-				for (var i = 0, ni = properties.mixins.length; i < ni; i++) {
-					// Mixins should be _super enabled, with the methods defined in the prototype as the superclass methods
-					mixin.call(prototype, properties.mixins[i], prototype);
-				}
-			}
-
-			// Define properties from this class and its parent classes
-			defineAndInheritProperties(Class, propertyDescriptors);
-
-			// Chain the construct() method (supermost executes first) if necessary
-			if (properties.construct) {
-				var construct = properties.construct;
-				if (superPrototype.construct) {
-					prototype.construct = function() {
-						superPrototype.construct.apply(this, arguments);
-						construct.apply(this, arguments);
-					};
-				}
-				else {
-					prototype.construct = construct;
-				}
-			}
-			
-			// Chain the destruct() method in reverse order (supermost executes last) if necessary
-			if (properties.destruct) {
-				var destruct = properties.destruct;
-				if (superPrototype.destruct) {
-					prototype.destruct = function() {
-						destruct.apply(this, arguments);
-						superPrototype.destruct.apply(this, arguments);
-					};
-				}
-				else {
-					prototype.destruct = destruct;
-				}
-			}
-
-			// Allow definition of toString as a string (turn it into a function)
-			if (typeof properties.toString === 'string') {
-				var className = properties.toString;
-				prototype.toString = function() { return className; };
-			}
-		}
-
-		// Define construct and init as noops if undefined
-		// This serves to avoid conditionals inside of the constructor
-		if (typeof prototype.construct !== 'function')
-			prototype.construct = noop;
-		if (typeof prototype.init !== 'function')
-			prototype.init = noop;
-
-		return Class;
-	};
-	
-	if (typeof module !== 'undefined' && module.exports) {
-		// Node.js Support
-		module.exports = Class;
-	}
-	else if (typeof global.define === 'function') {
-		(function(define) {
-			// AMD Support
-			define(function() { return Class; });
-		}(global.define));
-	}
-	else {
-		// Browser support
-		global.Class = global.PseudoClass = Class;
-	}
-}(this));
-
-},{}],113:[function(require,module,exports){
-arguments[4][109][0].apply(exports,arguments)
-},{"dup":109,"kevoree-kotlin":114}],114:[function(require,module,exports){
-arguments[4][102][0].apply(exports,arguments)
-},{"./lib/kotlin":115,"dup":102}],115:[function(require,module,exports){
-arguments[4][103][0].apply(exports,arguments)
-},{"dup":103}],116:[function(require,module,exports){
+},{"dup":103}],113:[function(require,module,exports){
 arguments[4][101][0].apply(exports,arguments)
-},{"_process":14,"dup":101}],117:[function(require,module,exports){
+},{"_process":14,"dup":101}],114:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -55871,7 +55892,7 @@ function ws(uri, protocols, opts) {
 
 if (WebSocket) ws.prototype = WebSocket.prototype;
 
-},{}],118:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 (function (process){
 var WebSocket       = require('ws'),
     async           = require('async'),
@@ -56040,7 +56061,7 @@ SmartSocket.prototype.close = function (stop) {
 module.exports = SmartSocket;
 
 }).call(this,require('_process'))
-},{"_process":14,"async":116,"events":6,"util":34,"ws":117}],"kevoree-group-remotews":[function(require,module,exports){
+},{"_process":14,"async":113,"events":6,"util":34,"ws":114}],"kevoree-group-remotews":[function(require,module,exports){
 var AbstractGroup = require('kevoree-entities').AbstractGroup,
     SmartSocket   = require('smart-socket'),
     kevoree       = require('kevoree-library').org.kevoree;
@@ -56059,6 +56080,7 @@ var RemoteWSGroup = AbstractGroup.extend({
     dic_host: { optional: false },
     dic_port: { optional: true, defaultValue: 80 },
     dic_path: { optional: true, defaultValue: '/' },
+    dic_answerPull: { optional: false, fragmentDependant: true, defaultValue: true },
 
     /**
      * this method will be called by the Kevoree platform when your group has to start
@@ -56103,11 +56125,15 @@ var RemoteWSGroup = AbstractGroup.extend({
                     this.kCore.deploy(model);
 
                 } else if (msg === PULL) {
-                    this.log.info(this.toString(), '"'+this.getName()+'" received a pull request');
+                    if (this.dictionary.getBoolean('answerPull', this.dic_answerPull.defaultValue)) {
+                        this.log.info(this.toString(), '"'+this.getName()+'" received a pull request');
 
-                    var serializer = factory.createJSONSerializer();
-                    var strModel = serializer.serialize(this.kCore.getCurrentModel());
-                    ws.send(strModel);
+                        var serializer = factory.createJSONSerializer();
+                        var strModel = serializer.serialize(this.kCore.getCurrentModel());
+                        ws.send(strModel);
+                    } else {
+                        this.log.info(this.toString(), '"'+this.getName()+'" received a pull request, but \'answerPull\' mode is false');
+                    }
 
                 } else {
                     this.log.debug(this.toString(), '"'+this.getName()+'" unknown incoming message ('+msg.toString()+')');
@@ -56146,4 +56172,4 @@ var RemoteWSGroup = AbstractGroup.extend({
 
 module.exports = RemoteWSGroup;
 
-},{"kevoree-entities":35,"kevoree-library":113,"smart-socket":118}]},{},[]);
+},{"kevoree-entities":35,"kevoree-library":110,"smart-socket":115}]},{},[]);
