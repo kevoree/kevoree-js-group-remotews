@@ -1,6 +1,6 @@
 {
   "name": "kevoree-group-remotews",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "main": "./lib/RemoteWSGroup.js",
   "kevoree": {
     "package": "org.kevoree.library"
@@ -21,7 +21,7 @@
   "dependencies": {
     "kevoree-entities": "^8.0.2",
     "kevoree-library": "^5.0.4",
-    "smart-socket": "^0.2.1"
+    "smart-socket": "^0.3.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
