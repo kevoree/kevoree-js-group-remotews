@@ -1,6 +1,6 @@
 {
   "name": "kevoree-group-remotews",
-  "version": "5.3.3-alpha.4",
+  "version": "5.3.3-alpha.5",
   "main": "./lib/RemoteWSGroup.js",
   "description": "A Kevoree group that uses an external remote WebSocket broadcast server to share models.<br/>The attribute <strong>answerPull</strong> specifies whether the fragments must send their model back on pull requests.",
   "kevoree": {
@@ -22,15 +22,18 @@
   "dependencies": {
     "kevoree-entities": "^9.0.0-alpha.0",
     "kevoree-library": "next",
-    "smart-socket": "^0.4.0"
+    "smart-socket": "^0.5.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-contrib-uglify": "^0.8.1",
     "grunt-kevoree": "^5.9.0-alpha.2",
     "grunt-kevoree-genmodel": "^3.0.0",
-    "grunt-kevoree-registry": "^3.0.1"
+    "grunt-kevoree-registry": "^3.0.1",
+    "grunt-webpack": "^1.0.18",
+    "json-loader": "^0.5.4",
+    "load-grunt-tasks": "^3.5.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "homepage": "https://github.com/kevoree/kevoree-js",
   "repository": {
